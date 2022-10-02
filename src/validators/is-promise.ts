@@ -1,5 +1,3 @@
-import {__proto__} from '../utilities';
-
 /**
  * Checks whether the given value is a promise.
  *
@@ -9,5 +7,5 @@ import {__proto__} from '../utilities';
 export function isPromise<T = any>(
   value: T | Promise<any>,
 ): value is Promise<any> {
-  return __proto__(value) === '[object Promise]';
+  return Object.prototype.toString.call(value) === '[object Promise]';
 }

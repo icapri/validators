@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --config jestconfig.json"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/i-kapri/validators.git"
   },
-  "keywords": ["TypeScript", "Validators", "Validation"],
+  "keywords": [
+    "TypeScript",
+    "Validators",
+    "Validation"
+  ],
   "author": "I. Kapri",
   "license": "MIT",
   "bugs": {
@@ -19,11 +23,16 @@
   },
   "homepage": "https://github.com/i-kapri/validators#readme",
   "devDependencies": {
+    "@types/jest": "^28.1.4",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
     "eslint": "^8.16.0",
     "eslint-config-google": "^0.14.0",
+    "jest": "^28.1.2",
+    "ts-jest": "^28.0.5",
     "typescript": "^4.6.4"
   },
-  "files": ["lib/**/*"]
+  "files": [
+    "lib/**/*"
+  ]
 }

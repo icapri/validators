@@ -1,5 +1,3 @@
-import {__proto__} from '../utilities';
-
 /**
  * Checks whether the given value is a function.
  *
@@ -7,5 +5,5 @@ import {__proto__} from '../utilities';
  * @return {boolean} whether the given value is a function.
  */
 export function isFunc<T = any>(value: T | Function): value is Function {
-  return __proto__(value).indexOf('Function') > -1;
+  return Object.prototype.toString.call(value).indexOf('Function') > -1;
 }

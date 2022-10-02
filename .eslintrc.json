@@ -11,11 +11,7 @@
   },
   "plugins": ["@typescript-eslint"],
   "rules": {
-      "indent": [
-          "warn", 2
-      ]
+    "indent": ["warn", 2]
   },
-  "ignorePatterns": [
-      "lib"
-  ]
+  "ignorePatterns": ["lib", "src/spec/*"]
 }

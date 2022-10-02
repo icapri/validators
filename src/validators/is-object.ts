@@ -1,5 +1,3 @@
-import {__proto__} from '../utilities';
-
 /**
  * Checks whether the input parameter is an object.
  *
@@ -7,5 +5,5 @@ import {__proto__} from '../utilities';
  * @return {boolean} whether the given value is of type object.
  */
 export function isObject<T = any>(value: T | object): value is object {
-  return __proto__(value) === '[object Object]';
+  return Object.prototype.toString.call(value) === '[object Object]';
 }

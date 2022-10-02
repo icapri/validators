@@ -1,5 +1,3 @@
-import {__proto__} from '../utilities';
-
 /**
  * Checks whether a given value is a date object.
  *
@@ -8,5 +6,5 @@ import {__proto__} from '../utilities';
  * @return {boolean} whether the given value is of type date.
  */
 export function isDate(value: any): value is Date {
-  return __proto__(value) === '[object Date]';
+  return Object.prototype.toString.call(value) === '[object Date]';
 }
