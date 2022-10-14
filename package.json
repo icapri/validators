@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/i-kapri/validators.git"
+    "url": "git+https://github.com/icapri/validators.git"
   },
   "keywords": [
     "TypeScript",
@@ -19,9 +19,9 @@
   "author": "I. Kapri",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/i-kapri/validators/issues"
+    "url": "https://github.com/icapri/validators/issues"
   },
-  "homepage": "https://github.com/i-kapri/validators#readme",
+  "homepage": "https://github.com/icapri/validators#readme",
   "devDependencies": {
     "@types/jest": "^28.1.4",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
