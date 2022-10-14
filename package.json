@@ -1,7 +1,7 @@
 {
   "name": "@satanas/validators",
   "version": "1.0.0",
-  "description": "",
+  "description": "Validators for TypeScript",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
