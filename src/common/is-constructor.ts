@@ -1,4 +1,4 @@
-import { ConstructorType } from "../types";
+import { Constructable } from "../types";
 
 /**
  * Checks whether the given variable has a constructor.
@@ -6,7 +6,7 @@ import { ConstructorType } from "../types";
  * @param value Contains some value.
  * @returns whether the given value has a constructor.
  */
-export function isConstructor(value: any): value is ConstructorType {
+export function isConstructor(value: any): value is Constructable {
   try {
     // workaround to check whether the constructor of the given value
     // can be called i. e. whether the given value has a constructor,
