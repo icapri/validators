@@ -44,7 +44,7 @@ Did you find a bug? Or maybe you have a feature request or some other issue? Ple
 `v1.0.0` - Initial release
 
 ## Contributing
-If you feel motivated to contribute on this project feel free to [contact me on LinkedIn](https://www.linkedin.com/in/igli-kapri-994131162).
+If you feel motivated to contribute on this project feel free to contact us.
 
 ## License
 [MIT](https://opensource.org/licenses/MIT)
