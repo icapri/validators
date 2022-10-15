@@ -1,4 +1,4 @@
-import { Primitive } from "../types";
+import { Primitive } from "../../utilities/types";
 import { isNull } from "./is-null";
 
 export function isPrimitive(value: any): value is Primitive {

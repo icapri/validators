@@ -1,4 +1,4 @@
-import { Func } from "../types";
+import { Func } from "../../utilities/types";
 import { isFunction } from "./is-function";
 
 /**

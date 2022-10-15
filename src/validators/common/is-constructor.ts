@@ -1,4 +1,4 @@
-import { Constructable } from "../types";
+import { Constructable } from "../../utilities/types";
 
 /**
  * Checks whether the given variable has a constructor.

@@ -1,4 +1,4 @@
-import { Func } from "../types";
+import { Func } from "../../utilities/types";
 
 /**
  * Checks whether the given value is a function.

@@ -1,4 +1,4 @@
-import { Falsy } from "../types";
+import { Falsy } from "../../utilities/types";
 
 export function isTruthy<T>(value: T | Falsy): value is T {
   // firstly make sure the value is defined

@@ -1,4 +1,4 @@
-import { StringWithSpaces } from "../types";
+import { StringWithSpaces } from "../../utilities/types";
 import { isString } from "./is-string";
 
 export function hasWhiteSpace(value: string): value is StringWithSpaces {

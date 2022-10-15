@@ -1,4 +1,4 @@
-import { isFunc } from "../common/is-function";
+import { isFunc } from "../common/is-func";
 import { isNull } from "../common/is-null";
 import { isString } from "../strings/is-string";
 
