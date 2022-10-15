@@ -1,7 +1,7 @@
 /**
  * Checks whether the given value is an object.
  *
- * @param {*} value Contains the value of some variable.
+ * @param {*} value Contains some value. Could be everything.
  * @return {Boolean} whether the given value is an object.
  */
 export function isObject(value: any): value is object | Object {

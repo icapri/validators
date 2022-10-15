@@ -1,5 +1,11 @@
-import { isSet } from "./is-set";
+import {isSet} from './is-set';
 
-export function isEmptySet<T, U>(value: T | Set<U>): value is Set<U> {
+/**
+ * Checks whether the given value is an empty set.
+ *
+ * @param {*} value Contains some value.
+ * @return {Boolean} whether the given value is an empty set.
+ */
+export function isEmptySet(value: any): value is Set<any> {
   return isSet(value) && value.size === 0;
 }

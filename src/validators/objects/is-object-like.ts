@@ -1,4 +1,4 @@
-import { isNull } from "../common/is-null";
+import {isNull} from '../common/is-null';
 
 /**
  * Checks whether the given value looks like object.

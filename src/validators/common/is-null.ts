@@ -1,7 +1,7 @@
 /**
  * Checks whether the given variable is `null`.
  *
- * @param {*} value Contains the value of a given variable.
+ * @param {*} value Contains some value. Could be everything.
  * @return {Boolean} whether the given variable is `null`.
  */
 export function isNull(value: any): value is null {

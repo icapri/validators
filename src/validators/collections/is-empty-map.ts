@@ -1,5 +1,11 @@
-import { isMap } from "./is-map";
+import {isMap} from './is-map';
 
-export function isEmptyMap<T, U, V>(value: T | Map<U, V>): value is Map<U, V> {
+/**
+ * Checks whether the given value is an empty map.
+ *
+ * @param {*} value Contains some value.
+ * @return {Boolean} whether the given value is an empty map.
+ */
+export function isEmptyMap(value: any): value is Map<any, any> {
   return isMap(value) && value.size === 0;
 }

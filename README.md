@@ -1,13 +1,11 @@
 <div align="center">
-
 <img src="src/assets/logo.png" width="67" alt="Circinus Software Logo" />
-
 </div>
 <div align="center">
   <p style="font-family:consolas;font-size: 20px;color:#323336">Circinus Software</p>
 </div>
 
-:rocket: The first version of the package `@circinus/validators` is out now!
+:rocket: The first version of the library `@circinus/validators` is out now!
 
 ## Description
 
@@ -15,22 +13,28 @@ This library helps developers avoid errors and bugs during development. By valid
 
 ## Installation
 
-:one: Make sure the active directory in your Terminal is the project folder. Then execute the following command:
+- Make sure the active directory in your Terminal is the project folder. Then execute the following command:
 
 ```
 npm install @circinus/validators
 ```
 
-:two: Enjoy this package. :v:
+- Enjoy this package. :v:
 
 ## Usage
 
-:one: Add an import statement as follows:
+- Add an import statement as follows:
 
 ```
 import { isPrimitive } from '@circinus/validators';
 ```
-:two: Happy coding!
+- The validators are just functions, so just add them to the import block for `@circinus/validators` and call them whenever you need their help e. g.:
+```
+const person = this.peopleService.getPerson('john_doe');
+if (hasValue(person)) {
+  return person.fullName;
+}
+```
 
 ## Support
 

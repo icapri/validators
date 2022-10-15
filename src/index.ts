@@ -1,5 +1,5 @@
 /**
- * Defines a barrel to reexport child modules. 
+ * Defines a barrel to reexport child modules.
  */
 // Collections
 export * from './validators/collections/is-array-like';

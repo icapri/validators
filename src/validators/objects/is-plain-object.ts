@@ -1,8 +1,16 @@
-import { isDefined } from "../common/is-defined";
-import { hasProperty } from "./has-property";
-import { isObject } from "./is-object";
+import {PlainObject} from '../../utilities/interfaces';
+import {isDefined} from '../common/is-defined';
+import {hasProperty} from './has-property';
+import {isObject} from './is-object';
 
-export function isPlainObject(value: any): value is { [key: string | symbol | number]: any } {
+/**
+ * Checks whether the given value is a plain object.
+ *
+ * @param {*} value Contains some value. Could be everything.
+ * @return {Boolean} whether the given value is a plain object.
+ */
+export function isPlainObject(value: any): value is PlainObject {
+  // if the value is not an object, it cannot be a plain object either
   if (!isObject(value) || !('constructor' in value)) {
     return false;
   }

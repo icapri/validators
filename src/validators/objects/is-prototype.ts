@@ -1,11 +1,11 @@
-import { hasValue } from "../common/has-value";
-import { isFunc } from "../common/is-func";
+import {hasValue} from '../common/has-value';
+import {isFunc} from '../common/is-func';
 
 /**
  * Checks whether the given value is a prototype.
  *
  * @param {*} value Contains the value to be checked whether it is a prototype.
- * @return {boolean} whether the given value is a prototype.
+ * @return {Boolean} whether the given value is a prototype.
  */
 export function isPrototype(value: any): boolean {
   const Ctor = hasValue(value) && value.constructor;

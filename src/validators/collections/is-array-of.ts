@@ -1,27 +1,23 @@
-import { isPrimitive } from "../common/is-primitive";
+import {Constructable, Primitive} from '../../utilities/types';
+import {isPrimitive} from '../common/is-primitive';
 
-type Primitive =
-  | "string"
-  | "number"
-  | "bigint"
-  | "boolean"
-  | "null"
-  | "symbol"
-  | "undefined";
-
-type Constructable = new (...args: any[]) => any;
+/**
+ * Represents the possible types of the array items.
+ */
+type ArrayItemType = Constructable | Primitive;
 
 /**
  * Checks whether all the items of the given array are of the given type.
  *
- * @param array Contains some array.
- * @param itemType Contains some data type for the array items. Right now
+ * @param {Array} array Contains some array.
+ * @param {*} itemType Contains some data type for the array items. Right now
  * it only supports primitive types and constructable types.
- * @returns whether all the items of the given array are of the given type.
+ * @return {Boolean} whether all the items of the given array are of the
+ * given type.
  */
 export function isArrayOf(
   array: Array<any>,
-  itemType: Constructable | Primitive
+  itemType: ArrayItemType,
 ): boolean {
   if (isPrimitive(itemType)) {
     return array.every((item: any) => typeof item === itemType);
