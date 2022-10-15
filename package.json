@@ -1,5 +1,5 @@
 {
-  "name": "@satanas/validators",
+  "name": "@circinus/validators",
   "version": "1.0.0",
   "description": "Validators for TypeScript",
   "main": "index.js",

@@ -15,12 +15,15 @@ export * from './collections/sets-equal';
 
 // Common
 export * from './common/has-value';
+export * from './common/is-bool';
 export * from './common/is-boolean-object';
 export * from './common/is-boolean';
+export * from './common/is-constructable';
 export * from './common/is-constructor';
 export * from './common/is-defined';
 export * from './common/is-empty';
 export * from './common/is-falsy';
+export * from './common/is-func';
 export * from './common/is-function';
 export * from './common/is-nil';
 export * from './common/is-null-or-undefined';

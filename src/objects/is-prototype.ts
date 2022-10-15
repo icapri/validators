@@ -1,5 +1,5 @@
 import { hasValue } from "../common/has-value";
-import { isFunc } from "../common/is-function";
+import { isFunc } from "../common/is-func";
 
 /**
  * Checks whether the given value is a prototype.

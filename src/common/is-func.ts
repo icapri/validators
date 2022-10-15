@@ -1,4 +1,5 @@
 import { Func } from "../types";
+import { isFunction } from "./is-function";
 
 /**
  * Checks whether the given value is a function.
@@ -6,8 +7,8 @@ import { Func } from "../types";
  * @param value Everything possible.
  * @returns whether the value of the given variable is a function.
  *
- * @see isFunc
+ * @see isFunction
  */
-export function isFunction(value: any): value is Func {
-  return typeof value === "function";
+export function isFunc(value: any): value is Func {
+  return isFunction(value);
 }

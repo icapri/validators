@@ -1,11 +1,12 @@
-type ConstructorType<T = any> = new(...args: any[]) => T;
+import { ConstructorType } from "../types";
 
 /**
- * 
- * @param value 
- * @returns 
+ * Checks whether the given variable has a constructor.
+ *
+ * @param value Contains some value.
+ * @returns whether the given value has a constructor.
  */
-export function isConstructable(value: any): value is ConstructorType {
+export function isConstructor(value: any): value is ConstructorType {
   try {
     // workaround to check whether the constructor of the given value
     // can be called i. e. whether the given value has a constructor,
@@ -24,8 +25,4 @@ export function isConstructable(value: any): value is ConstructorType {
 
   // the given value has a constructor
   return true;
-}
-
-export function isConstructor(value: any): value is ConstructorType {
-  return isConstructable(value);
 }
