@@ -1,4 +1,4 @@
-import {isArray} from '..';
+import {isArray} from '../..';
 
 const test1: Array<number> = [];
 const test2 = new Array<string>('');

@@ -43,7 +43,7 @@ if (hasValue(person)) {
 Did you find a bug? Or maybe you have a feature request or some other issue? Please report it [here](https://github.com/icapri/validators/issues) and we will immediately start fixing it.
 
 ## Roadmap
-`v1.0.0` - Initial release
+`v1.0.4` - Latest stable
 
 ## Contributing
 If you feel motivated to contribute on this project feel free to contact us.

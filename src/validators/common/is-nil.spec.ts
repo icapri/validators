@@ -1,3 +1,3 @@
-test('isEven()', () => {
+test('isNil()', () => {
   expect(false).toBe(false);
 });

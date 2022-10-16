@@ -1,4 +1,4 @@
-import { isDefined } from "..";
+import { isDefined } from "../..";
 
 class Test {
   test1?: string;

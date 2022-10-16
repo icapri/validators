@@ -1,4 +1,4 @@
-import {isBool} from '..';
+import {isBool} from '../..';
 
 const test1 = !0;
 const test2 = !1;

@@ -1,4 +1,4 @@
-import {hasProperty} from '..';
+import {hasProperty} from '../..';
 
 /**
  * Test class
