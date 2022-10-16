@@ -9,7 +9,9 @@
 
 ## Description
 
-This library helps developers avoid errors and bugs during development. By validating via `@circinus/validators` errors like `Cannot read properties of undefined` won't appear anymore in the browser console. 
+This library helps developers avoid errors and bugs during development. By validating via `@circinus/validators` errors like `Cannot read properties of undefined` won't appear anymore in the browser console. In this library has been paid extra attention to the types used, even when using generic types which is very important in TypeScript.
+
+The library does not depend on any other libraries, every validator has been build and used within the library.
 
 ## Installation
 
@@ -47,4 +49,4 @@ Did you find a bug? Or maybe you have a feature request or some other issue? Ple
 If you feel motivated to contribute on this project feel free to contact us.
 
 ## License
-[MIT](https://opensource.org/licenses/MIT)
+[MIT](https://github.com/icapri/validators/blob/main/LICENSE)
