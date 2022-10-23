@@ -3,7 +3,6 @@
  */
 // Collections
 export * from './validators/collections/is-array-like';
-export * from './validators/collections/is-array-of';
 export * from './validators/collections/is-array';
 export * from './validators/collections/is-empty-array';
 export * from './validators/collections/is-empty-map';
@@ -48,6 +47,7 @@ export * from './validators/numbers/is-odd';
 export * from './validators/numbers/is-prime';
 
 // Objects
+export * from './validators/objects/deep-equal';
 export * from './validators/objects/has-property';
 export * from './validators/objects/is-empty-object';
 export * from './validators/objects/is-key-of';

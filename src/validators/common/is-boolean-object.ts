@@ -1,4 +1,4 @@
-import {isObject} from '../objects/is-object';
+import {isObjectLike} from '../objects/is-object-like';
 
 /**
  * Checks whether the given value is an instance of the `Boolean`
@@ -9,5 +9,5 @@ import {isObject} from '../objects/is-object';
  * `Boolean` object.
  */
 export function isBooleanObject(value: any): value is Boolean {
-  return isObject(value) && typeof value.valueOf() === 'boolean';
+  return isObjectLike(value) && typeof value.valueOf() === 'boolean';
 }

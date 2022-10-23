@@ -20,7 +20,7 @@ test('isBool()', () => {
   expect(isBool(test2)).toBe(true);
   expect(isBool(test3)).toBe(true);
   expect(isBool(test4)).toBe(true);
-  expect(isBool(test5)).toBe(true);
+  expect(isBool(test5)).toBe(false);
   expect(isBool(test6)).toBe(false);
   expect(isBool(test7)).toBe(false);
   expect(isBool(test8)).toBe(false);

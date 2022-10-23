@@ -10,8 +10,6 @@ import {isString} from '../strings/is-string';
  * @return {Boolean} whether the given value is iterable.
  */
 export function isIterable(value: any): value is IterableObject {
-  // firstly strings and `null` values should be excluded because especially
-  // regarding strings there is some issue that they behave as iterable
-  // objects besides being no collections
+  // strings are also iterable in js but here they have been excluded
   return !isNull(value) && !isString(value) && isFunc(value[Symbol.iterator]);
 }

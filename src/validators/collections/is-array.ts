@@ -10,5 +10,5 @@ export function isArray(value: any): value is Array<any> {
   // alternatives would be `value.constructor === Array` or the
   // most trivial way is just calling `Array.isArray()` which is
   // a method of the Array prototype (depends on the JS version)
-  return Object.prototype.toString.call(value) === '[object Object]';
+  return Object.prototype.toString.call(value) === '[object Array]';
 }
