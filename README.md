@@ -1,6 +1,4 @@
-<div align="center">
-<img src="src/assets/logo.png" width="67" alt="Circinus Software Logo" />
-</div>
+
 <div align="center">
   <p style="font-family:consolas;font-size: 20px;color:#323336">Circinus Software</p>
 </div>
