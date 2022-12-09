@@ -35,6 +35,9 @@ export * from './validators/common/is-undefined';
 export * from './validators/dates/is-date';
 export * from './validators/dates/is-valid-date';
 
+// DOM
+export * from './validators/dom/is-scrollable';
+
 // Numbers
 export * from './validators/numbers/is-big-integer';
 export * from './validators/numbers/is-bigint';
