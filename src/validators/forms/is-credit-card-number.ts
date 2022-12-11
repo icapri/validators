@@ -44,8 +44,9 @@ export function creditCardNumber(
     return val.match(accepts) !== null;
   }
 
-  if (isArray(accepts) && accepts.every((_) => _ instanceof RegExp)) {
+  if (isArray(accepts)) {
     return accepts.some((c): c is RegExp => val.match(c as RegExp) !== null);
   }
+
   return false;
 }

@@ -1,6 +1,6 @@
 {
   "name": "@circinus/validators",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Validators for TypeScript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -37,5 +37,8 @@
   },
   "files": [
     "lib/**/*"
-  ]
+  ],
+  "dependencies": {
+    "libphonenumber-js": "^1.10.15"
+  }
 }

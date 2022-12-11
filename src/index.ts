@@ -36,7 +36,15 @@ export * from './validators/dates/is-date';
 export * from './validators/dates/is-valid-date';
 
 // DOM
+export * from './validators/dom/is-bottom-scrolled';
 export * from './validators/dom/is-scrollable';
+export * from './validators/dom/is-top-scrolled';
+
+// Forms
+export * from './validators/forms/is-credit-card-number';
+export * from './validators/forms/is-email';
+export * from './validators/forms/is-iban';
+export * from './validators/forms/is-phone-number';
 
 // Numbers
 export * from './validators/numbers/is-big-integer';
