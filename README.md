@@ -30,9 +30,9 @@ import { isPrimitive } from '@circinus/validators';
 ```
 - The validators are just functions, so just add them to the import block for `@circinus/validators` and call them whenever you need their help e. g.:
 ```
-const person = this.peopleService.getPerson('john_doe');
-if (hasValue(person)) {
-  return person.fullName;
+const email = emailControl.value;
+if (isEmail(email)) {
+  // do something..
 }
 ```
 
@@ -41,7 +41,7 @@ if (hasValue(person)) {
 Did you find a bug? Or maybe you have a feature request or some other issue? Please report it [here](https://github.com/icapri/validators/issues) and we will immediately start fixing it.
 
 ## Roadmap
-`v1.0.4` - Latest stable
+`v1.0.7` - Latest stable
 
 ## Contributing
 If you feel motivated to contribute on this project feel free to contact us.
