@@ -8,26 +8,25 @@ export type ScrollAxis = 'x' | 'y';
  *
  * @param {HTMLElement} element Contains the HTML element to be checked whether
  * it is scrollable.
- * @param {ScrollAxis} axis Contains the scroll axis.
+ * @param {ScrollAxis} axis Contains the scroll axis. Unless defined, the
+ * element is checked whether it is scrollable both vertically and horizontally.
  * @return {boolean} whether the HTML element is scrollable.
  */
 export function isScrollable(element: HTMLElement, axis?: ScrollAxis): boolean {
-  const isOverflowX = ['scroll', 'auto'].includes(element.style.overflowX);
-  const isOverflowY = ['scroll', 'auto'].includes(element.style.overflowY);
-  const scrollWidth = element.scrollWidth;
-  const clientWidth = element.clientWidth;
-  const scrollHeight = element.scrollHeight;
-  const clientHeight = element.clientHeight;
+  // the styles of the element
+  const style = window.getComputedStyle(element);
 
+  // check whether the HTML element is scrollable horizontally
   if (axis === 'x') {
-    return isOverflowX && scrollWidth > clientWidth;
+    return style.overflowX === 'visible';
   }
 
+  // check whether the HTML element is scrollable vertically
   if (axis === 'y') {
-    return isOverflowY && scrollHeight > clientHeight;
+    return style.overflowY === 'visible';
   }
 
-  const isScrollableX = isOverflowX && scrollWidth > clientWidth;
-  const isScrollableY = isOverflowY && scrollHeight > clientHeight;
-  return isScrollableX || isScrollableY;
+  // check whether the HTML element is scrollable either horizontally or
+  // vertically
+  return style.overflowX === 'visible' || style.overflowY === 'visible';
 }

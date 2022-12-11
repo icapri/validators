@@ -1,5 +1,3 @@
-import {isNull} from './is-null';
-
 /**
  * Checks whether the given value is `null`.
  *
@@ -9,5 +7,5 @@ import {isNull} from './is-null';
  * @see isNull
  */
 export function isNil(value: any): value is null {
-  return isNull(value);
+  return value == null;
 }

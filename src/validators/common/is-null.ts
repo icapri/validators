@@ -5,6 +5,7 @@
  * @return {Boolean} whether the given variable is `null`.
  */
 export function isNull(value: any): value is null {
-  // this next line is just magic :)
-  return value == null;
+  // by using === instead of ==, js won't try to "find" similarities
+  // but instead it will make sure the value is `null`
+  return value === null;
 }
